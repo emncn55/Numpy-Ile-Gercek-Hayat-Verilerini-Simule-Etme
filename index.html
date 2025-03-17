@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualizations</title>
+    <style>
+        /* Use Flexbox to arrange image containers horizontally */
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* Distributes the space evenly between containers */
+            align-items: flex-start; /* Aligns the images to the top */
+            flex-wrap: nowrap; /* Prevents images from wrapping to the next line */
+            overflow: hidden; /* Hides anything that overflows the container */
+            width: 100%; /* Ensures the container uses full width */
+        }
+
+        .image-box {
+            text-align: center; /* Centers the text (title) above the image */
+            width: 32%; /* Adjust the width of each image box */
+        }
+
+        .image-box img {
+            max-width: 100%; /* Makes sure the images fill their container */
+            margin: 10px 0; /* Adds space between the image and the title */
+            object-fit: contain; /* Ensures the image maintains its aspect ratio */
+        }
+
+        /* Makes the page responsive for smaller screens */
+        @media (max-width: 768px) {
+            .image-box {
+                width: 48%; /* Adjusts the width on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-box {
+                width: 100%; /* Stacks the image boxes vertically on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-box">
+            <h2>Company Salary Analysis</h2>
+            <img src="C:\Users\canem\Desktop\NumPy ile Gerçek Hayat Verilerini Simüle Etme\web-page\images\salary_distribution.png" alt="Salary Distribution" />
+        </div>
+
+        <div class="image-box">
+            <h2>Weather Data Analysis</h2>
+            <img src="C:\Users\canem\Desktop\NumPy ile Gerçek Hayat Verilerini Simüle Etme\web-page\images\daily_temperature.png" alt="Daily Temperature" />
+        </div>
+
+        <div class="image-box">
+            <h2>Product Sales Analysis</h2>
+            <img src="C:\Users\canem\Desktop\NumPy ile Gerçek Hayat Verilerini Simüle Etme\web-page\images\total_sales.png.png" alt="Total Sales for Each Product" />
+        </div>
+    </div>
+</body>
+</html>
